@@ -55,7 +55,7 @@ nav .navigation ul li a {
   text-decoration: none;
   color: rgb(21, 21, 100);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.3s ease;
 }
 nav .navigation ul li a:hover {
@@ -142,6 +142,7 @@ nav .navigation ul li a:hover {
 #features .fea-box {
   background-color: #f9f9ff;
   text-align: start;
+  padding: 30px;
 }
 
 #features .fea-box i {
@@ -164,7 +165,7 @@ nav .navigation ul li a:hover {
 
 /*----- Courses -----*/
 #course {
-  padding: 8vw 8vw 0 8vw;
+  padding: 8vw 8vw 8vw 8vw;
   text-align: center;
 }
 
@@ -187,7 +188,6 @@ nav .navigation ul li a:hover {
   height: 60%;
   background-position: center;
   background-size: cover;
-  z-index: 1;
 }
 
 #course .courses .details {
@@ -226,7 +226,6 @@ nav .navigation ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
 }
 
 #registration .reminder {
@@ -297,7 +296,7 @@ nav .navigation ul li a:hover {
 
 /*----- Profiles -----*/
 #experts {
-  padding: 8vw 8vw 0 8vw;
+  padding: 8vw 8vw 8vw 8vw;
   text-align: center;
 }
 
@@ -331,4 +330,113 @@ nav .navigation ul li a:hover {
 #experts .expert-box .profile .pro-links i:hover {
   background: rgb(21, 21, 100);
   color: #fff;
+}
+
+/*----- Footer -----*/
+footer {
+  padding: 4vw 8vw;
+  background-color: #101c32;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer .footer-col {
+  padding-bottom: 40px;
+}
+
+footer h3 {
+  color: rgb(241, 240, 245);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+footer li {
+  list-style: none;
+  color: #7b838a;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+footer li:hover {
+  color: rgb(241, 240, 245);
+}
+
+footer p {
+  color: #7b838a;
+}
+
+footer .subscribe {
+  margin-top: 20px;
+}
+
+footer input {
+  width: 220px;
+  padding: 15px 12px;
+  background: #334f6c;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+footer .subscribe a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 12px 15px;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+footer .subscribe a.yellow {
+  color: #fff;
+  background: #fdc93b;
+  transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover {
+  color: rgb(21, 21, 100);
+  background: #fff;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  margin-left: 35%;
+}
+
+footer .copyright p {
+  color: #fff;
+}
+
+footer .copyright span {
+  color: #fff;
+}
+
+footer .copyright a {
+  text-decoration: none;
+  color: #fdc93b;
+  font-size: 14px;
+}
+
+footer .copyright a:hover {
+  color: #fafaf1;
+}
+
+@media (max-width: 769px) {
+  nav {
+    padding: 15px 20px;
+  }
+  nav img {
+    width: 130px;
+  }
+
+  #registration {
+    display: block;
+  }
+
+  footer .copyright {
+    margin-left: 5%;
+  }
 }
